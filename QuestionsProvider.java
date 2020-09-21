@@ -19,7 +19,6 @@ public class QuestionsProvider implements Parcelable {
             "An expression involving byte, int, & literal numbers is promoted to which of these?"
     };
 
-
     String[] mCorrectAnswers = {"modi", "<=", "this", "interface", "public", "import pkg.*", "None of the mentioned", "java", "equals()", "int"};
 
     String[][] mChoices = {
@@ -63,8 +62,6 @@ public class QuestionsProvider implements Parcelable {
         return mCorrectAnswers[a];
     }
 
-
-
     protected QuestionsProvider(Parcel in) {
         int rows = in.readInt();
         int columns = in.readInt();
@@ -105,6 +102,7 @@ public class QuestionsProvider implements Parcelable {
         parcel.writeStringArray(mCorrectAnswers);
 
     }
+
     private String[] flattenChoices(String[][] sourceCard) {
 
         int k = 0;
@@ -117,6 +115,7 @@ public class QuestionsProvider implements Parcelable {
         }
         return targetCard;
     }
+
     private String[][] restoreChoices(String[] sourceCard, int rows, int columns) {
 
         int k = 0;

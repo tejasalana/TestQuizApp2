@@ -1,12 +1,11 @@
 package com.example.mytestquiz2;
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 
 public  class  MainActivity extends AppCompatActivity {
 
@@ -15,9 +14,7 @@ public  class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = getIntent();
-        Boolean boole = intent.getBooleanExtra("exit",false);
-        if(boole){
+        if(getIntent().getBooleanExtra("exit",false)){
             finish();
         }
 

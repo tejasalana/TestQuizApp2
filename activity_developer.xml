@@ -1,61 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#A0ACAE">
-
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:text="Button" />
+        android:layout_marginBottom="21dp"
+        android:text="Choice-4" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_above="@+id/button"
         android:layout_marginBottom="20dp"
-        android:text="Button" />
+        android:text="Choice-3" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_above="@+id/button2"
         android:layout_marginBottom="20dp"
-        android:text="Button" />
+        android:text="Choice-2" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_above="@+id/button3"
         android:layout_marginBottom="20dp"
-        android:text="Button" />
+        android:text="Choice-1" />
 
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_above="@+id/button4"
-        android:layout_marginBottom="30dp"
-        android:text="TextView"
-        android:textSize="25dp" />
+        android:layout_marginBottom="25dp"
+        android:hint="Question"
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="15dp"
         android:layout_above="@+id/question"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="22dp"
-        android:text="TextView"
-        android:textSize="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Name of User"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
